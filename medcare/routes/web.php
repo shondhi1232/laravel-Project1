@@ -31,7 +31,7 @@ route::get('/Clients',[ClientsController::class, 'fetchClients']);
 
 
 route::get('/add-post',[PostController::class, 'addPost']);
-route::get('/create-post',[PostController::class, 'createPost'])->name('post-create');
+route::post('/create-post',[PostController::class, 'createPost'])->name('post-create');
 route::get('/posts',[PostController::class, 'getPost']);
 route::get('/delete-post/{id}',[PostController::class, 'deletePost']);
 route::get('/edit-post/{id}',[PostController::class, 'editPost']);
