@@ -27,18 +27,18 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline ">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline"><button class="button1">Log in</button></a>
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline"><button class="button1">Register</button></a>
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                         @endif
                     @endauth
                 </div>
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0"><div>
-                    <img src="C:\xampp\htdocs\hellow\laravel-Project1\medcare\resources\views\Screenshot 2022-03-23 003822.png"></div>
+                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
+                   
                    <div class="title m-b-md text-gray-900 dark:text-white"><h1>MedCare</h1></div>
                 </div>
 
