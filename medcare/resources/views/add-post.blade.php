@@ -15,6 +15,21 @@
 
 </head>
 <body>
+
+    <nav  class="navbar navbar-expand-sm bg-info border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+
+            <div class=" fixed top-0 right-0 py-0 links">
+
+                   <h4> <a href="/" class="text-sm text-success underline "> HOME</a></h4>
+            </div>
+
+                
+            </div>
+        </div>
+    </nav>
+
     <section style="padding-top: 60px">
 
         <div class="container"> 
@@ -22,7 +37,7 @@
                 <div class="col-md-6 offset-md-3">
                     <div class="card">
                         <div class="card-header" style="text-align: center ">
-                            Add Post
+                            <h3>Add Post</h3>
                         </div>
                         <div class="card-body">
                             @if (Session::has('post-created'))
