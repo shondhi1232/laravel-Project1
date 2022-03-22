@@ -15,6 +15,21 @@
 
 </head>
 <body>
+
+    <nav  class="navbar navbar-expand-sm bg-info border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+
+            <div class=" fixed top-0 right-0 py-0 links">
+
+                    <a href="/" class="text-sm text-gray-700 dark:text-gray-500 underline">HOME</a>
+            </div>
+
+                
+            </div>
+        </div>
+    </nav>
+
     <section style="padding-top: 60px">
 
         <div class="container"> 

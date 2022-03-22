@@ -16,6 +16,20 @@
 
 </head>
 <body>
+    <nav  class="navbar navbar-expand-sm bg-info border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+
+            <div class=" fixed top-0 right-0 py-0 links">
+
+                   <h4><a href="/" class="text-sm text-info  underline">HOME</a> </h4> 
+            </div>
+
+                
+            </div>
+        </div>
+    </nav>
+
     <section style="padding-top: 60px">
 
         <div class="container"> 
@@ -23,7 +37,10 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header" >
-                            All Post <a href="/add-post" class="btn btn-success">Add new post</a>
+                          <div class="" style="text-align: center"  > 
+                            <h2>All Post<span class="badge badge-secondary"> new</span></h2>
+                              </div>
+                               <br><a href="/add-post" class="btn btn-success">Add new post</a>
                         </div>
                         <div class="card-body">
                             @if (Session::has('post_deleted'))
@@ -48,7 +65,7 @@
                                    <td>{{$post->title}}</td>
                                    <td>{{$post->body}}</td>
                                    <td>
-                                       <a href="/edit-post/{{$post->id}}" class="btn btn-danger">Edit</a>
+                                       <a href="/edit-post/{{$post->id}}" class="btn btn-primary">Edit</a>
                                        <a href="/delete-post/{{$post->id}}" class="btn btn-danger">Delete</a>
                                    </td>
                                </tr>
