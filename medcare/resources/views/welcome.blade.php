@@ -20,7 +20,8 @@
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body >
+       <div>
         <nav x-data="{ open: false }" class="bg-info border-b border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -38,14 +39,16 @@
                     @endauth
                 </div>
             @endif
-                    
+
                 </div>
             </div>
         </nav>
-        
+
+       </div>
+        <div class="antialiased">
 
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            
+
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -63,6 +66,7 @@
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                     Welcome to Medcare Bangladesh. We are a cloud based online  Medicine shop . Bringing you all the convinient servide of online medicine purches and a lot.
+
                                 </div>
                             </div>
                         </div>
@@ -134,6 +138,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
