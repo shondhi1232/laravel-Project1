@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PhotoController;
+
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\feedbackController;
 use Illuminate\Support\Facades\View;
 use App\Models\User;
 use App\Models\Clinets;
@@ -19,12 +20,15 @@ use App\Models\Clinets;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+route::get('/feedback',[feedbackController::class, 'addfeedback']);
 
 
 route::get('/Clients',[ClientsController::class, 'fetchClients']);
